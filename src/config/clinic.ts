@@ -1,283 +1,335 @@
 export const clinic = {
-  // === IDENTIDAD ===
-  name: "Centro Estética CyM",
-  logo: "/images/logo.jpg" as string | null,
-  tagline: "Tu Centro de Belleza en Puertollano",
-  description: "Centro Estética CyM es un centro de belleza integral en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados para realzar tu belleza natural.",
-
-  // === PALETA (Elegante/Spa) ===
+  name: "NIUMA BELLEZA",
+  logo: "/images/logo.png",
+  tagline: "Tu salón de belleza capilar de referencia en 28013 Madrid",
+  description: "NIUMA BELLEZA es la peluquería especializada en pelucas, trenzas y extensiones de cabello natural más valorada de Madrid, con 4.9 estrellas y 958 reseñas. Con más de 38 años de experiencia, ofrecemos una variedad exclusiva de pelucas de alta calidad, trenzas africanas, extensiones de pelo natural y nuestra propia línea de cosméticos capilares. Ubicados en 28013 Madrid, somos el referente para quienes buscan transformaciones capilares profesionales con atención personalizada y productos premium.",
   colors: {
-    primary: "#C9A86C",      // Dorado elegante
-    secondary: "#2D2D2D",    // Gris sofisticado
-    accent: "#D4A574",       // Rosa champán
-    neutral: "#FAF8F5",      // Crema cálido
+    primary: "#ba8b5b",
+    secondary: "#17140d",
+    accent: "#d8c5ce",
+    neutral: "#f9f6f2"
   },
-
-  // === CONTACTO ===
-  phone: "629 61 04 71",
-  whatsapp: "+34629610471",
-  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de estética.",
-  email: "info@esteticacym.es",
-
-  // === UBICACIÓN ===
+  phone: "655 83 82 17",
+  whatsapp: "+34655838217",
+  whatsappMessage: "Hola, me gustaría pedir cita para peluquería.",
+  email: "",
   address: {
-    street: "C. Numancia, 40",
-    city: "Puertollano",
-    province: "Ciudad Real",
-    postalCode: "13500",
-    country: "España",
+    street: "C. de las Tres Cruces, 4, Bajo. Local, Centro, 28013 Madrid, España",
+    city: "Madrid",
+    province: "Madrid",
+    postalCode: "28013",
+    country: "España"
   },
-  googleMapsUrl: "https://maps.google.com/?q=C.+Numancia+40+Puertollano",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.5!2d-4.1078!3d38.6872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d1f1a8a8a8a8a%3A0x0!2sC.+Numancia%2C+40%2C+13500+Puertollano!5e0!3m2!1ses!2ses!4v1",
-  coordinates: { lat: 38.6872, lng: -4.1078 },
-
-  // === HORARIOS ===
+  googleMapsUrl: "https://maps.google.com/?cid=520137240181476408&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  googleMapsEmbed: "https://maps.google.com/maps?q=NIUMA%20BELLEZA%20%4040.4192%2C-3.70287&z=16&output=embed",
+  coordinates: {
+    lat: 40.4192,
+    lng: -3.70287
+  },
   schedule: [
-    { days: "Lunes - Viernes", hours: "10:00 - 20:00" },
-    { days: "Sábado", hours: "Cerrado" },
-    { days: "Domingo", hours: "Cerrado" },
+    {
+      days: "lunes - sábado",
+      hours: "10:00–20:00"
+    },
+    {
+      days: "domingo",
+      hours: "Cerrado"
+    }
   ],
-
-  // === REDES SOCIALES ===
   social: {
-    instagram: "https://www.instagram.com/centrodeesteticacym/",
-    facebook: "https://www.facebook.com/centrodeesteticacym/",
-    linkedin: null as string | null,
-    tiktok: null as string | null,
+    instagram: null,
+    facebook: null,
+    linkedin: null,
+    tiktok: null
   },
-
-  // === RESEÑAS GOOGLE ===
   reviews: {
-    rating: 4.7,
-    count: 190,
-    url: "#",
+    rating: 4.9,
+    count: 958,
+    url: "https://maps.google.com/?cid=520137240181476408&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     featured: [
       {
-        author: "Eva León",
+        author: "eunice dum",
         rating: 5,
-        text: "Increíble trabajo de micropigmentación. El resultado es muy natural y el trato inmejorable. Sin duda volveré para más tratamientos.",
-        date: "hace 2 semanas",
+        text: "Fui a realizarme por primera vez unas trenzas y sali encantada!. Tanto la dueña Niuma y sus trabajadores son muy amables, hacen un excelente trabajo, porque aman su trabajo. Y se esmeran porque estés feliz con los resultados. Sin duda es 100% recomendada. 😊🥰",
+        date: "Hace 5 meses"
       },
       {
-        author: "Javier Padilla",
+        author: "Javier Serna",
         rating: 5,
-        text: "Excelente profesionalidad en todos los tratamientos. Las instalaciones son muy modernas y el ambiente muy relajante.",
-        date: "hace 1 mes",
+        text: "Me encanta este lugar, es el mejor en Madrid para pelucas por más de 38 años. También tiene su propia marca de cosméticos y Niuma es una auténtica Diva, siempre súper elegante y bien vestida.",
+        date: "Hace un año"
       },
       {
-        author: "Melanie Ponce",
+        author: "Yaritza Rodriguez",
         rating: 5,
-        text: "Me encantó el resultado del microblading. Quedé muy satisfecha con el trabajo realizado. Muy recomendable.",
-        date: "hace 1 mes",
+        text: "Excelente cabellos naturales me encantan muchas gracias por la atención quede fascinada con mi cabello 😍",
+        date: "Hace 5 meses"
       },
       {
-        author: "María Teresa Salguero",
+        author: "Patricia Quinteros Montoya",
         rating: 5,
-        text: "El mejor centro de estética de Puertollano. Tratamientos de calidad y atención personalizada. Volveré seguro.",
-        date: "hace 2 meses",
+        text: "Excelente servicio, atención y todos los productos maravillosos. Variedad exclusiva de pelucas.",
+        date: "Hace 2 meses"
       },
-    ],
+      {
+        author: "Lorena Águila Amado",
+        rating: 5,
+        text: "Es increíble este centro pelucas increíbles y muy profesional",
+        date: "Hace 2 meses"
+      }
+    ]
   },
-
-  // === SERVICIOS ===
   services: [
     {
-      id: "micropigmentacion",
-      name: "Micropigmentación",
-      description: "Técnica avanzada de maquillaje semipermanente para cejas, labios y ojos. Resultados naturales y duraderos que realzan tu belleza.",
-      benefits: ["Resultados naturales", "Larga duración", "Mínimo mantenimiento"],
-      icon: "Sparkles",
+      id: "pelucas-exclusivas",
+      name: "Pelucas Exclusivas",
+      description: "Variedad exclusiva de pelucas de alta calidad y cabello natural. Con más de 38 años de experiencia, somos referentes en Madrid en pelucas premium. Asesoramiento personalizado para encontrar tu peluca perfecta que se adapte a tu estilo y necesidades.",
+      benefits: [
+        "Cabello 100% natural de máxima calidad",
+        "Más de 38 años de experiencia especializada",
+        "Variedad exclusiva y asesoramiento personalizado"
+      ],
+      icon: "Crown"
     },
     {
-      id: "microblading",
-      name: "Microblading de Cejas",
-      description: "Técnica pelo a pelo para cejas perfectamente definidas. Efecto hiperrealista que simula el vello natural.",
-      benefits: ["Efecto pelo a pelo", "Cejas definidas", "Aspecto natural"],
-      icon: "Feather",
+      id: "trenzas-africanas",
+      name: "Trenzas Africanas",
+      description: "Especialistas en todo tipo de trenzas africanas realizadas con técnica profesional y cabello natural. Nuestro equipo se esmera en cada detalle para que salgas encantada con un resultado impecable y duradero. Perfecto para un cambio de look protector y con estilo.",
+      benefits: [
+        "Técnicas profesionales de trenzado africano",
+        "Equipo especializado que ama su trabajo",
+        "Resultados duraderos y espectaculares"
+      ],
+      icon: "Layers"
     },
     {
-      id: "depilacion-laser",
-      name: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos.",
-      benefits: ["Resultados permanentes", "Sin dolor", "Piel suave"],
-      icon: "Zap",
+      id: "extensiones-naturales",
+      name: "Extensiones de Cabello Natural",
+      description: "Extensiones con cabello 100% natural para añadir volumen y longitud con un acabado completamente natural. Trabajamos con las mejores calidades del mercado y diferentes técnicas de aplicación. Resultados que fascinan a nuestras clientas.",
+      benefits: [
+        "Cabello natural de primera calidad",
+        "Acabado invisible y natural",
+        "Mayor volumen y longitud al instante"
+      ],
+      icon: "Sparkles"
     },
     {
-      id: "tratamientos-faciales",
-      name: "Tratamientos Faciales",
-      description: "Cuidados personalizados para cada tipo de piel. Hidratación profunda, antiedad y luminosidad para un rostro radiante.",
-      benefits: ["Piel rejuvenecida", "Hidratación profunda", "Luminosidad"],
-      icon: "Flower2",
+      id: "cosmeticos-propios",
+      name: "Cosmética Capilar NIUMA",
+      description: "Nuestra propia línea de productos cosméticos capilares desarrollada con años de experiencia en el sector. Productos profesionales para el cuidado, mantenimiento y tratamiento de todo tipo de cabello. Disponibles en nuestro salón con asesoramiento experto.",
+      benefits: [
+        "Marca propia con fórmulas exclusivas",
+        "Productos profesionales de alta gama",
+        "Asesoramiento personalizado de uso"
+      ],
+      icon: "Heart"
     },
     {
-      id: "tratamientos-corporales",
-      name: "Tratamientos Corporales",
-      description: "Tratamientos reductores, reafirmantes y anticelulíticos. Moldea tu silueta con las técnicas más avanzadas.",
-      benefits: ["Reduce centímetros", "Reafirma la piel", "Elimina celulitis"],
-      icon: "Heart",
+      id: "corte-peinado",
+      name: "Corte y Peinado",
+      description: "Cortes personalizados y peinados profesionales adaptados a tu estilo y tipo de cabello. Nuestros estilistas analizan tu pelo y crean el look perfecto para ti. Desde cortes clásicos hasta las últimas tendencias urbanas.",
+      benefits: [
+        "Cortes a medida de tu estilo",
+        "Técnicas actualizadas y modernas",
+        "Asesoramiento profesional incluido"
+      ],
+      icon: "Scissors"
     },
     {
-      id: "manicura-pedicura",
-      name: "Manicura y Pedicura",
-      description: "Cuidado completo de manos y pies con esmaltes de alta calidad. Uñas perfectas con diseños personalizados.",
-      benefits: ["Uñas perfectas", "Manos cuidadas", "Diseños exclusivos"],
-      icon: "Hand",
+      id: "tratamientos-capilares",
+      name: "Tratamientos Capilares",
+      description: "Tratamientos reparadores e hidratantes para todo tipo de cabello, especialmente para pelo natural y con extensiones. Utilizamos productos de alta gama y nuestra propia línea cosmética. Recupera la salud, brillo y suavidad de tu melena.",
+      benefits: [
+        "Productos premium y marca propia",
+        "Hidratación profunda y reparación",
+        "Resultados visibles desde la primera sesión"
+      ],
+      icon: "Sparkles"
     },
     {
-      id: "extensiones-pestanas",
-      name: "Extensiones de Pestañas",
-      description: "Mirada impactante con extensiones de pestañas pelo a pelo. Efecto natural o dramático según tu preferencia.",
-      benefits: ["Mirada intensa", "Efecto natural", "Sin máscara"],
-      icon: "Eye",
+      id: "cuidado-pelucas",
+      name: "Mantenimiento de Pelucas",
+      description: "Servicio especializado de mantenimiento, lavado, peinado y reparación de pelucas. Con nuestra experiencia de más de 38 años, cuidamos tu inversión para que tu peluca se mantenga perfecta por más tiempo. Asesoramiento sobre cuidados en casa.",
+      benefits: [
+        "Expertos con más de 38 años de experiencia",
+        "Lavado y styling profesional",
+        "Prolongamos la vida útil de tu peluca"
+      ],
+      icon: "Heart"
     },
     {
-      id: "maquillaje-profesional",
-      name: "Maquillaje Profesional",
-      description: "Maquillaje para eventos especiales, novias y sesiones fotográficas. Realza tu belleza para cada ocasión.",
-      benefits: ["Look personalizado", "Alta duración", "Acabado profesional"],
-      icon: "Palette",
-    },
+      id: "asesoria-imagen",
+      name: "Asesoría de Imagen Capilar",
+      description: "Consultoría personalizada para encontrar el look capilar que mejor se adapte a ti: pelucas, extensiones, trenzas o cortes. Analizamos tu estilo, necesidades y preferencias. Te guiamos hacia la mejor decisión para tu transformación.",
+      benefits: [
+        "Análisis personalizado de tu estilo",
+        "Recomendaciones de expertos",
+        "Encuentra tu look perfecto"
+      ],
+      icon: "User"
+    }
   ],
-
-  // === PROCESO ===
   process: [
     {
       step: 1,
-      title: "Contacta",
-      description: "Solicita tu cita de consulta inicial por teléfono o WhatsApp",
+      title: "Reserva tu Cita",
+      description: "Contacta con nosotros por teléfono al 655 83 82 17 o WhatsApp. Te atenderemos personalmente para agendar tu cita en el horario que mejor te convenga."
     },
     {
       step: 2,
-      title: "Consulta",
-      description: "Analizamos tus necesidades y diseñamos el tratamiento ideal para ti",
+      title: "Consulta Personalizada",
+      description: "Analizamos tu cabello, escuchamos tus deseos y te asesoramos profesionalmente. Si buscas pelucas, trenzas o extensiones, te mostramos opciones exclusivas y te ayudamos a elegir la perfecta para ti."
     },
     {
       step: 3,
-      title: "Tratamiento",
-      description: "Realizamos el tratamiento con las técnicas más avanzadas y productos de calidad",
+      title: "Transformación Profesional",
+      description: "Nuestro equipo especializado trabaja con dedicación y cariño en tu look. Utilizamos técnicas profesionales, cabello natural de primera calidad y productos de nuestra propia línea cosmética para resultados excepcionales."
     },
     {
       step: 4,
-      title: "Resultados",
-      description: "Disfruta de resultados espectaculares y un seguimiento personalizado",
-    },
+      title: "Resultado Fascinante",
+      description: "Sales de NIUMA BELLEZA con una transformación que te encantará. Te damos consejos personalizados de mantenimiento y cuidados en casa para que tu look se mantenga perfecto por más tiempo."
+    }
   ],
-
-  // === POR QUÉ ELEGIRNOS ===
   whyUs: [
     {
-      title: "Especialistas en Micropigmentación",
-      description: "Técnicas avanzadas de micropigmentación y microblading con resultados naturales y duraderos",
-      icon: "Award",
+      title: "Más de 38 Años de Experiencia",
+      description: "Somos el salón de referencia en Madrid con más de tres décadas especializados en pelucas, trenzas y cabello natural. Nuestra trayectoria nos avala como expertos en transformaciones capilares que enamoran.",
+      icon: "Crown"
     },
     {
-      title: "Tecnología de Vanguardia",
-      description: "Equipos de última generación para tratamientos más efectivos y seguros",
-      icon: "Cpu",
+      title: "4.9 Estrellas y 958 Reseñas",
+      description: "Nuestros clientes nos avalan con una valoración excepcional de 4.9 estrellas en Google. Destacan nuestra atención amable, profesionalidad y resultados fascinantes. La satisfacción de nuestras clientas es nuestra mejor carta de presentación.",
+      icon: "Sparkles"
     },
     {
-      title: "Atención Personalizada",
-      description: "Cada clienta recibe un tratamiento único adaptado a sus necesidades y deseos",
-      icon: "UserCheck",
+      title: "Variedad Exclusiva y Calidad Premium",
+      description: "Ofrecemos pelucas exclusivas de cabello natural, extensiones de primera calidad y nuestra propia línea de cosméticos NIUMA. Trabajamos solo con productos premium para garantizar resultados excepcionales y duraderos.",
+      icon: "Heart"
     },
     {
-      title: "Valoración 4.7 Estrellas",
-      description: "190 clientas satisfechas nos avalan con excelentes valoraciones en Google",
-      icon: "Star",
-    },
+      title: "Equipo que Ama su Trabajo",
+      description: "Nuestro equipo liderado por Niuma se esmera en cada detalle porque amamos lo que hacemos. Combinamos técnica profesional con dedicación personal para que cada cliente salga encantado con su transformación capilar.",
+      icon: "User"
+    }
   ],
-
-  // === EQUIPO ===
   team: [
     {
-      name: "Centro Estética CyM",
-      role: "Especialistas en Micropigmentación",
+      name: "Niuma",
+      role: "Fundadora y Estilista Principal",
       image: "/images/team/placeholder.jpg",
-      bio: "Profesionales apasionadas por la belleza y el cuidado personal. Con años de experiencia en micropigmentación, microblading y tratamientos estéticos, nos dedicamos a realzar la belleza natural de cada clienta.",
-    },
+      bio: "Estilistas apasionados por la belleza y las tendencias. En NIUMA BELLEZA nos dedicamos a que cada cliente salga con el look perfecto y la confianza renovada."
+    }
   ],
-
-  // === GALERÍA ===
   gallery: [
-    { src: "/images/gallery/local-fuera.webp", alt: "Fachada del Centro Estética CyM" },
-    { src: "/images/gallery/local-dentro.webp", alt: "Interior del centro - Recepción" },
-    { src: "/images/gallery/clinica-dentro1.webp", alt: "Sala de tratamientos" },
+    {
+      src: "/images/hero.webp",
+      alt: "NIUMA BELLEZA - Imagen 1"
+    },
+    {
+      src: "/images/gallery/2.webp",
+      alt: "NIUMA BELLEZA - Imagen 2"
+    },
+    {
+      src: "/images/gallery/3.webp",
+      alt: "NIUMA BELLEZA - Imagen 3"
+    },
+    {
+      src: "/images/gallery/4.webp",
+      alt: "NIUMA BELLEZA - Imagen 4"
+    },
+    {
+      src: "/images/gallery/5.webp",
+      alt: "NIUMA BELLEZA - Imagen 5"
+    },
+    {
+      src: "/images/gallery/6.webp",
+      alt: "NIUMA BELLEZA - Imagen 6"
+    },
+    {
+      src: "/images/gallery/7.webp",
+      alt: "NIUMA BELLEZA - Imagen 7"
+    },
+    {
+      src: "/images/gallery/8.webp",
+      alt: "NIUMA BELLEZA - Imagen 8"
+    },
+    {
+      src: "/images/gallery/9.webp",
+      alt: "NIUMA BELLEZA - Imagen 9"
+    }
   ],
-
-  // === FAQ ===
   faq: [
     {
-      question: "¿Cuánto dura la micropigmentación?",
-      answer: "La micropigmentación puede durar entre 1 y 3 años dependiendo del tipo de piel, cuidados posteriores y la zona tratada. Ofrecemos retoques para mantener el resultado óptimo.",
+      question: "¿Por qué NIUMA BELLEZA es referente en pelucas en Madrid?",
+      answer: "NIUMA BELLEZA cuenta con más de 38 años de experiencia especializada en pelucas de alta calidad. Ofrecemos una variedad exclusiva de pelucas de cabello natural, asesoramiento personalizado y un servicio profesional que nos ha convertido en el salón mejor valorado de Madrid con 4.9 estrellas y 958 reseñas. Nuestra experiencia y dedicación nos distinguen en el sector."
     },
     {
-      question: "¿Es doloroso el microblading de cejas?",
-      answer: "El procedimiento es prácticamente indoloro gracias a la aplicación de crema anestésica tópica. La mayoría de clientas describen la sensación como un ligero cosquilleo.",
+      question: "¿Qué tipo de trenzas africanas realizan?",
+      answer: "En NIUMA BELLEZA somos especialistas en todo tipo de trenzas africanas: box braids, trenzas pegadas, senegalesas, twist y muchos más estilos. Trabajamos con cabello natural de calidad y nuestro equipo está altamente capacitado en técnicas profesionales de trenzado. Nos esmeramos en cada detalle para que salgas encantada con un resultado impecable y duradero."
     },
     {
-      question: "¿Cuántas sesiones necesito para la depilación láser?",
-      answer: "Generalmente se necesitan entre 6 y 8 sesiones espaciadas cada 4-6 semanas para obtener resultados óptimos. El número exacto depende del tipo de piel y vello.",
+      question: "¿Las extensiones que utilizan son de cabello natural?",
+      answer: "Sí, en NIUMA BELLEZA trabajamos exclusivamente con extensiones de cabello 100% natural de primera calidad. Esto garantiza un acabado completamente natural, mayor durabilidad y la posibilidad de tratarlas como tu propio cabello. Nuestras clientas quedan fascinadas con los resultados porque la calidad es excepcional y el acabado invisible."
     },
     {
-      question: "¿Qué cuidados necesito después de un tratamiento facial?",
-      answer: "Recomendamos evitar el sol directo, usar protección solar SPF50 y seguir la rutina de cuidados que te indicamos según tu tipo de piel.",
+      question: "¿Qué es la línea de cosméticos NIUMA?",
+      answer: "NIUMA BELLEZA ha desarrollado su propia marca de productos cosméticos capilares basada en más de 38 años de experiencia. Son productos profesionales de alta gama para el cuidado, tratamiento y mantenimiento de todo tipo de cabello, especialmente pelo natural, extensiones y pelucas. Están disponibles en nuestro salón con asesoramiento personalizado sobre su uso."
     },
     {
-      question: "¿Ofrecéis tratamientos para novias?",
-      answer: "Sí, tenemos packs especiales para novias que incluyen tratamientos faciales, maquillaje de prueba y el día de la boda, manicura y más.",
+      question: "¿Cómo puedo reservar una cita en NIUMA BELLEZA?",
+      answer: "Puedes reservar tu cita llamándonos directamente al 655 83 82 17 o escribiéndonos por WhatsApp al mismo número. Nuestro equipo te atenderá personalmente para agendar tu cita en el horario que mejor te convenga. Estamos ubicados en 28013 Madrid y estaremos encantados de recibirte."
     },
     {
-      question: "¿Las extensiones de pestañas dañan mis pestañas naturales?",
-      answer: "No, cuando se aplican correctamente por profesionales cualificados, las extensiones no dañan las pestañas naturales. Usamos adhesivos de alta calidad y técnicas seguras.",
+      question: "¿Ofrecen servicio de mantenimiento para pelucas?",
+      answer: "Sí, ofrecemos servicio completo de mantenimiento de pelucas que incluye lavado profesional, peinado, reparaciones y asesoramiento sobre cuidados en casa. Con nuestra experiencia de más de 38 años, sabemos exactamente cómo cuidar tu peluca para prolongar su vida útil y mantenerla siempre perfecta. Es un servicio muy valorado por nuestras clientas habituales."
     },
     {
-      question: "¿Cuánto dura una sesión de tratamiento facial?",
-      answer: "Dependiendo del tratamiento, las sesiones duran entre 45 y 90 minutos. Incluimos tiempo para la consulta inicial y recomendaciones personalizadas.",
+      question: "¿Por qué NIUMA BELLEZA tiene tan buenas valoraciones?",
+      answer: "Nuestras 958 reseñas con 4.9 estrellas en Google reflejan nuestro compromiso con la excelencia. Los clientes destacan nuestra atención amable y personalizada, la calidad excepcional de nuestros servicios, la variedad exclusiva de productos y sobre todo, que amamos nuestro trabajo y nos esmeramos porque cada cliente salga feliz con los resultados. La experiencia de más de 38 años y la profesionalidad de Niuma y su equipo son nuestra mejor carta de presentación."
     },
     {
-      question: "¿Necesito cita previa?",
-      answer: "Sí, recomendamos siempre reservar cita previa para garantizar la disponibilidad y poder dedicarte el tiempo que mereces. Puedes reservar por teléfono o WhatsApp.",
-    },
+      question: "¿Qué hace especial a NIUMA como profesional?",
+      answer: "Niuma es una auténtica diva del sector con más de 38 años de trayectoria, reconocida por su elegancia, profesionalidad y pasión por la belleza capilar. Su experiencia, buen gusto y dedicación personal a cada cliente han convertido su salón en referente de Madrid. Además, ha desarrollado su propia línea de cosméticos y lidera un equipo que comparte su amor por el trabajo bien hecho."
+    }
   ],
-
-  // === SEO ===
   seo: {
-    titleTemplate: "%s | Centro Estética CyM - Belleza en Puertollano",
-    defaultTitle: "Centro Estética CyM | Tu Centro de Belleza en Puertollano",
-    defaultDescription: "Centro de estética en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados. Cita previa: 629 61 04 71.",
+    titleTemplate: "%s | NIUMA BELLEZA",
+    defaultTitle: "NIUMA BELLEZA - Peluquería Especializada en 28013 Madrid",
+    defaultDescription: "Salón especializado en pelucas exclusivas, trenzas africanas y extensiones naturales en 28013 Madrid. +38 años de experiencia. 4.9★ (958 reseñas). ☎ 655 83 82 17",
     keywords: [
-      "centro estética Puertollano",
-      "micropigmentación Puertollano",
-      "microblading cejas Puertollano",
-      "depilación láser Puertollano",
-      "tratamientos faciales Puertollano",
-      "extensiones pestañas Puertollano",
-      "maquillaje profesional",
-      "manicura pedicura",
-      "tratamientos corporales",
-      "belleza Puertollano",
-      "Centro Estética CyM",
-      "estética Ciudad Real",
+      "NIUMA BELLEZA",
+      "peluquería 28013 Madrid",
+      "pelucas Madrid",
+      "trenzas africanas Madrid",
+      "extensiones cabello natural Madrid",
+      "pelucas exclusivas Madrid centro",
+      "salón de belleza 28013",
+      "cosméticos capilares Madrid",
+      "trenzas profesionales Madrid",
+      "extensiones pelo Madrid",
+      "peluquería especializada Madrid",
+      "mejor peluquería pelucas Madrid"
     ],
-    ogImage: "/og-image.jpg",
+    ogImage: "/og-image.jpg"
   },
-
-  // === LEGAL ===
   legal: {
-    companyName: "Centro Estética CyM",
+    companyName: "NIUMA BELLEZA",
     cif: "",
-    registeredAddress: "C. Numancia, 40, 13500 Puertollano, Ciudad Real",
+    registeredAddress: "C. de las Tres Cruces, 4, Bajo. Local, Centro, 28013 Madrid, España, Madrid, Madrid"
   },
-
-  // === UI COPY (driven by clinic type) ===
-  heroHeadline: ["Tu Centro de", "Belleza", "en Puertollano"],
-  heroDescription: "Realza tu belleza natural con tratamientos de micropigmentación, microblading y estética avanzada. Profesionales cualificadas y tecnología de vanguardia.",
-  specialty: "Micropigmentación",
-  ctaLabel: "Realza tu Belleza",
-  ctaHeadline: "¿Lista para brillar?",
-  ctaDescription: "Da el primer paso hacia tu mejor versión. Pide tu cita ahora y nuestro equipo te asesorará de forma personalizada.",
-  statsLabel: "Clientas",
-  schemaType: "BeautySalon",
+  heroHeadline: [
+    "Tu Centro de",
+    "Peluquería",
+    "en Madrid"
+  ],
+  heroDescription: "Descubre el salón con más de 38 años de trayectoria especializado en pelucas exclusivas, trenzas africanas y cabello natural en Madrid. En NIUMA BELLEZA combinamos experiencia, profesionalidad y nuestra propia línea de cosméticos para ofrecerte resultados que te enamorarán. Con 4.9 estrellas en Google, somos el destino preferido para tu transformación capilar.",
+  specialty: "Pelucas y Trenzas",
+  ctaLabel: "Tu Nuevo Look",
+  ctaHeadline: "¿Lista para tu transformación capilar perfecta?",
+  ctaDescription: "Reserva tu cita en NIUMA BELLEZA y descubre por qué somos el salón mejor valorado de Madrid. Llámanos al 655 83 82 17 o escríbenos por WhatsApp.",
+  statsLabel: "Clientes",
+  schemaType: "HairSalon",
   sectionCopy: {
     servicesLabel: "Nuestros Servicios",
     servicesTitle: "Tratamientos especializados",
@@ -300,8 +352,8 @@ export const clinic = {
     locationTitle: "Cómo llegar",
     teamLabel: "Nuestro Equipo",
     teamTitle: "Profesionales especializadas",
-    teamDescription: "Experiencia y pasión al servicio de tu belleza",
-  },
+    teamDescription: "Experiencia y pasión al servicio de tu belleza"
+  }
 }
 
 export type Clinic = typeof clinic
